@@ -1,0 +1,371 @@
+:root {
+  --cor-primaria: #1A4539;
+  --cor-secundaria: #D5B66F;
+  --cinza-claro: #CDC7C7;
+  --branco: #fff;
+  --preto: #222;
+}
+/*FONTES*/
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+body, p, a, li {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+
+body {
+  margin: 0;
+  background-color: var(--branco);
+  color: var(--preto);
+}
+
+/* HEADER */
+.header {
+  background-color: var(--cor-primaria);
+  text-align: center;
+  padding: 10px 0;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  height: 500px;
+  border-radius: 50%;
+}
+
+.nav {
+  margin-top: 10px;
+}
+
+.nav a {
+  color: var(--branco);
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+
+h1{
+    margin:0px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: var(--cor-secundaria);
+  color: var(--preto);
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* SOBRE */
+.sobre {
+  padding: 40px 20px;
+  background-color: var(--branco);
+  text-align: center;
+}
+
+.sobre h2 {
+  font-size: 2rem;
+  color: var(--cor-primaria);
+  margin-bottom: 20px;
+}
+
+.sobre p {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* ADMINISTRADORAS */
+.admin-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin: 40px 0;
+  text-align: left;
+}
+
+.admin-texto {
+  max-width: 400px;
+}
+
+.admin-texto h3 {
+  font-size: 1.5rem;
+  color: var(--cor-primaria);
+}
+
+.admin-fotos img {
+  width: 180px;
+  border-radius: 12px;
+  margin: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* DESTAQUES - DIVS */
+.destaques {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.card {
+  background: var(--cor-secundaria);
+  padding: 20px;
+  border-radius: 10px;
+  width: 240px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  color: var(--cor-primaria);
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #444;
+  font-size: 0.95rem;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .admin-info {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .admin-texto, .admin-fotos {
+    max-width: 100%;
+  }
+
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav a {
+    margin: 10px;
+  }
+}
+/*SERVIÇOS*/
+.servicos {
+  background-color: var(--cor-primaria);
+  color: var(--branco);
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.servicos h2 {
+  font-size: 2rem;
+  margin-bottom: 50px;
+}
+
+.servicos p {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+.servicos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.servico-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 30px 20px;
+  text-align: center;
+  max-width: 280px;
+  transition: transform 0.3s ease;
+}
+
+.servico-card:hover {
+  transform: translateY(-5px);
+}
+
+.servico-card img {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 15px;
+  filter: brightness(0) invert(1);
+}
+
+.servico-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: var(--cor-secundaria);
+}
+
+.servico-card p {
+  font-size: 0.95rem;
+  color: #eee;
+}
+/* BTN FALE CONOSCO*/
+.cta {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: var(--cor-primaria);
+  color: white;
+}
+
+
+#contato h2{
+    margin-top: 2px;
+}
+
+.btn-fale-conosco {
+  display: inline-block;
+  padding: 14px 28px;
+  background-color: var(--cor-secundaria); /* Dourado */
+  color: var(--cor-primaria); /* Verde escuro */
+  font-weight: bold;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-fale-conosco:hover {
+  background-color: #c2a95f; /* tom mais escuro do dourado */
+  transform: translateY(-2px);
+}
+
+/* FOOTER */
+.rodape {
+  background-color: #FFFF;
+  color: #1A4539;
+  padding: 10px 10px 10px;
+  font-size: 0.95rem;
+}
+
+.container-rodape {
+  display: flex;
+  justify-content:center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 30px;
+}
+
+
+.contato-rodape h3,
+.redes-sociais-rodape h3 {
+  margin-bottom: 10px;
+  color: #D5B66F;
+}
+
+.contato-rodape p {
+  margin: 4px 0;
+}
+
+.redes-sociais-rodape a img {
+  width: 28px;
+  height: 28px;
+  margin-right: 10px;
+  transition: transform 0.2s ease;
+}
+
+.redes-sociais-rodape a:hover img {
+  transform: scale(1.1);
+}
+
+.creditos {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.85rem;
+  color: #ccc;
+}
+
+
+/*ICON-WHATSAPP*/
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  background-color: #25D366;
+  border-radius: 50%;
+  padding: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+  color: #ffffff;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-float img {
+  width: 32px;
+  height: 32px;
+}
+
+/* ICON -INSTAGRAM*/
+
+.botoes-contato {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.btn-contato {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--cor-secundaria); /* Dourado */
+  color: var(--cor-primaria);              /* Verde escuro */
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-contato img {
+  width: 24px;
+  height: 24px;
+}
+
+.btn-contato:hover {
+  background-color: #c2a95f;
+  transform: translateY(-2px);
+}
+
+
+
+
