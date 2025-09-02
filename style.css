@@ -239,6 +239,42 @@ h1{
   font-size: 0.95rem;
 }
 
+/* iMOVEIS EM DESTAQUE*/
+.carrossel-container {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 12px;
+}
+
+.carrossel-container h2 {
+  text-align: center;
+  color: #1A4539;
+  margin-bottom: 20px;
+}
+
+.imovel {
+  text-align: center;
+  padding: 10px;
+}
+
+.galeria {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.galeria img {
+  width: 30%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+  margin-top: 10px;
+}
+
 /*SERVIÇOS*/
 .servicos {
   background-color: var(--cor-primaria);
